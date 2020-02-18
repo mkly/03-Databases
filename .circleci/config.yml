@@ -4,10 +4,10 @@ jobs:
     docker:
       - image: circleci/node
       - image: circleci/postgres
-          environment:
-            POSTGRES_USER: test
-            POSTGRES_DB: test
-            POSTGRES_PASSWORD: test
+        environment:
+          POSTGRES_USER: test
+          POSTGRES_DB: test
+          POSTGRES_PASSWORD: test
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
